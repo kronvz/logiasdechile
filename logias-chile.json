@@ -362,9 +362,9 @@
   {
     "numero": 37,
     "nombre": "Caupolicán",
-    "direccion": "David Fuentes 179 Casilla 257",
+    "direccion": "David Fuentes 179",
     "ciudad": "Talcahuano",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=David+Fuentes+179+Casilla+257%2C+Talcahuano%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=David+Fuentes+179%2C+Talcahuano%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""

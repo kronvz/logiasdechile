@@ -412,9 +412,9 @@
   {
     "numero": 42,
     "nombre": "Acción Fraternal",
-    "direccion": "Vicuña Mackenna Nº 759 Casilla 197",
+    "direccion": "Vicuña Mackenna Nº 759",
     "ciudad": "Ovalle",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Vicu%C3%B1a+Mackenna+N%C2%BA+759+Casilla+197%2C+Ovalle%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Vicu%C3%B1a+Mackenna+N%C2%BA+759+Casilla+197%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""
@@ -462,9 +462,9 @@
   {
     "numero": 47,
     "nombre": "Abtao",
-    "direccion": ".Pedro Montt 100 Casilla 100",
+    "direccion": ".Pedro Montt 100",
     "ciudad": "Coquimbo",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=.Pedro+Montt+100+Casilla+100%2C+Coquimbo%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=.Pedro+Montt+100%2C+Coquimbo%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""

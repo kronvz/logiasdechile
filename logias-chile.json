@@ -282,9 +282,9 @@
   {
     "numero": 29,
     "nombre": "Morro de Arica",
-    "direccion": "Sotomayor 574 Casilla 122",
+    "direccion": "Sotomayor 574",
     "ciudad": "Arica",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Sotomayor+574+Casilla+122%2C+Arica%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Sotomayor+574%2C+Arica%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""
@@ -472,9 +472,9 @@
   {
     "numero": 48,
     "nombre": "Abnegación",
-    "direccion": "Viana N°553 - Casilla 284",
+    "direccion": "Viana N°553",
     "ciudad": "Viña del Mar",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Viana+N%C2%B0553+-+Casilla+284%2C+Vi%C3%B1a+del+Mar%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Viana+N%C2%B0553%2C+Vi%C3%B1a+del+Mar%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""
@@ -602,9 +602,9 @@
   {
     "numero": 61,
     "nombre": "Luz Austral",
-    "direccion": "Aurelio Andrade S/N° Casilla 439",
+    "direccion": "Aurelio Andrade S/N°",
     "ciudad": "Puerto Montt",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Aurelio+Andrade+S%2FN%C2%B0+Casilla+439%2C+Puerto+Montt%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Aurelio+Andrade+S%2FN%C2%B0%2C+Puerto+Montt%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""
@@ -612,9 +612,9 @@
   {
     "numero": 62,
     "nombre": "Ariel",
-    "direccion": "Manuel Rodríguez N°544 - Casilla 388",
+    "direccion": "Manuel Rodríguez N°544",
     "ciudad": "Los Andes",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Manuel+Rodr%C3%ADguez+N%C2%B0544+-+Casilla+388%2C+Los+Andes%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Manuel+Rodr%C3%ADguez+N%C2%B0544%2C+Los+Andes%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""
@@ -622,9 +622,9 @@
   {
     "numero": 63,
     "nombre": "Razón",
-    "direccion": "Curapalihue N°448 Casilla 63",
+    "direccion": "Curapalihue N°448",
     "ciudad": "Linares",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Curapalihue+N%C2%B0448+Casilla+63%2C+Linares%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Curapalihue+N%C2%B0448%2C+Linares%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""

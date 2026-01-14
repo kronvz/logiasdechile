@@ -682,9 +682,9 @@
   {
     "numero": 69,
     "nombre": "República",
-    "direccion": "Dieciocho 615 Casilla 325",
+    "direccion": "Dieciocho 615",
     "ciudad": "Parral",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Dieciocho+615+Casilla+325%2C+Parral%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Dieciocho+615%2C+Parral%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""

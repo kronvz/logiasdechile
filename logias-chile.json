@@ -222,9 +222,9 @@
   {
     "numero": 23,
     "nombre": "Francisco Bilbao",
-    "direccion": "Patricio Lynch 1266 Casilla 99",
+    "direccion": "Patricio Lynch 1266",
     "ciudad": "Iquique",
-    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Patricio+Lynch+1266+Casilla+99%2C+Iquique%2C+Chile",
+    "jurisdiccion": "https://www.google.com/maps/search/?api=1&query=Patricio+Lynch+1266%2C+Iquique%2C+Chile",
     "dia_tenida": "",
     "hora_tenida": "",
     "mapa": ""

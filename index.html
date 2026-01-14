@@ -86,6 +86,11 @@
     .btn-secondary:hover {
       background: #33364a;
     }
+    .loading {
+      text-align: center;
+      padding: 2rem;
+      color: #b0b0b0;
+    }
     .results-info {
       font-size: 0.85rem;
       color: #b0b0b0;
@@ -132,7 +137,7 @@
 <body>
   <header>
     <h1>Masonería Chile</h1>
-    <p class="subtitle">Buscador de logias por número, nombre, ciudad o dirección</p>
+    <p class="subtitle">Buscador de logias por número, nombre, ciudad o dirección (258 logias)</p>
   </header>
 
   <main>
@@ -162,9 +167,11 @@
       </div>
     </section>
 
-    <div class="results-info" id="resultsInfo"></div>
+    <div class="results-info" id="resultsInfo">Cargando logias desde JSON...</div>
 
-    <table>
+    <div id="loading" class="loading">⏳ Cargando datos...</div>
+
+    <table style="display: none;">
       <thead>
         <tr>
           <th>Número</th>
@@ -179,8 +186,24 @@
     </table>
   </main>
 
-  <script src="logias-data.js"></script>
   <script>
+    let logias = [];
+
+    // Cargar JSON
+    async function cargarLogias() {
+      try {
+        const response = await fetch('logias-chile.json');
+        logias = await response.json();
+        document.getElementById('loading').style.display = 'none';
+        document.querySelector('table').style.display = 'table';
+        renderTabla(logias);
+        document.getElementById('resultsInfo').textContent = `Mostrando ${logias.length} logias de Chile.`;
+      } catch (error) {
+        console.error('Error cargando JSON:', error);
+        document.getElementById('loading').innerHTML = '❌ Error cargando datos. Verifica logias-chile.json';
+      }
+    }
+
     function renderTabla(datos) {
       const tbody = document.getElementById("tablaLogias");
       tbody.innerHTML = "";
@@ -204,15 +227,14 @@
         tr.appendChild(tdCiudad);
 
         const tdMapa = document.createElement("td");
-        if (l.mapa) {
+        if (l.mapa || l.jurisdiccion?.startsWith('http')) {
+          const mapaUrl = l.mapa || l.jurisdiccion;
           const a = document.createElement("a");
-          a.href = l.mapa;
+          a.href = mapaUrl;
           a.target = "_blank";
           a.rel = "noopener";
-          a.textContent = "Ver mapa";
+          a.textContent = "🗺️ Ver";
           tdMapa.appendChild(a);
-        } else {
-          tdMapa.textContent = "";
         }
         tr.appendChild(tdMapa);
 
@@ -240,22 +262,10 @@
       const vDireccion = normalizarTexto(document.getElementById("direccion").value.trim());
 
       const filtrados = logias.filter(l => {
-        const numOk = vNumero
-          ? String(l.numero) === vNumero
-          : true;
-
-        const nomOk = vNombre
-          ? normalizarTexto(l.nombre).includes(vNombre)
-          : true;
-
-        const ciudadOk = vCiudad
-          ? normalizarTexto(l.ciudad).includes(vCiudad)
-          : true;
-
-        const dirOk = vDireccion
-          ? normalizarTexto(l.direccion).includes(vDireccion)
-          : true;
-
+        const numOk = vNumero ? String(l.numero) === vNumero : true;
+        const nomOk = vNombre ? normalizarTexto(l.nombre).includes(vNombre) : true;
+        const ciudadOk = vCiudad ? normalizarTexto(l.ciudad).includes(vCiudad) : true;
+        const dirOk = vDireccion ? normalizarTexto(l.direccion).includes(vDireccion) : true;
         return numOk && nomOk && ciudadOk && dirOk;
       });
 
@@ -270,7 +280,9 @@
       renderTabla(logias);
     }
 
-    renderTabla(logias);
+    // Cargar al iniciar
+    cargarLogias();
   </script>
 </body>
 </html>
+
